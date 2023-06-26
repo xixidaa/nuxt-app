@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: pingfang SC,helvetica neue,arial,hiragino sans gb,microsoft yahei ui,microsoft yahei,simsun;
+}
+
+html,body,#__nuxt {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+i,
+em {
+  box-sizing: border-box;
+  font-style: normal;
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+a {
+  text-decoration:none
+}
+
+// 定义一些全局类
+.overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow:ellipsis;
+}
+.line2 {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cursor_p {
+  cursor: pointer;
+}
+.fw6 {
+  font-weight: 600;
+}
+.tc {
+  text-align: center;
+}
+.overall_color1 {
+  color: #005FD3;
+}
+
+.overall_color2 {
+  color: rgba(21, 22, 24, 0.92);
+}
+
+.overall_color3 {
+  color: #fff !important;
+}
+.overall_color4 {
+  color: rgba(21, 22, 24, 0.72);
+}
+.overall_color5 {
+  color: rgba(21, 22, 24, 0.48);
+}
+.overall_color6 {
+  color: #D7092F;
+}
+.dsFlex {
+  display: flex;
+}
+.dsFlexJ {
+  display: flex;
+  justify-content: center;
+}
+.dsFlexA {
+  display: flex;
+  align-items: center;
+}
+.dsFlexC{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dsFlexJ_sb {
+  display: flex;
+  justify-content: space-between;
+}
+.dsFlexJA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsFlexJA_sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dsFlexJA_end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hoverClass {
+  &:hover {
+    color: #1F71FF;
+  }
+}
+.nuxt-page-container {
+  height: calc(100% - 48px);
+  background-color: cadetblue;
+}
